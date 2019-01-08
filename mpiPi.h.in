@@ -55,10 +55,13 @@ typedef const void mpip_const_void_t;
 typedef const int mpip_const_int_t;
 typedef const char mpip_const_char_t;
 typedef const MPI_Datatype mpip_const_datatype_t;
+typedef const MPI_Aint mpip_const_aint_t;
 #else
 typedef void mpip_const_void_t;
 typedef int mpip_const_int_t;
 typedef char mpip_const_char_t;
+typedef MPI_Datatype mpip_const_datatype_t;
+typedef MPI_Aint mpip_const_aint_t;
 #endif
 
 typedef char mpiPi_hostname_t[MPIPI_HOSTNAME_LEN_MAX];
